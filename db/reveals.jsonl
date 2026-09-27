@@ -406,7 +406,7 @@
 {"id": "099_03", "type": "REVEAL", "en": "You refused to listen to your boss’s explanations.", "passenger": "Boss", "es": "Te negaste a escuchar las explicaciones de tu jefe.", "status": "TRANSLATED", "locked": false}
 {"id": "099_04", "type": "REVEAL", "en": "You got a warning from your boss.", "passenger": "Boss", "es": "Recibiste una advertencia de tu jefe.", "status": "TRANSLATED", "locked": false}
 {"id": "100_00", "type": "REVEAL", "en": "You have met Lieutenant Busset.", "passenger": "Lieutenant Busset", "es": "Conociste a la teniente Busset.", "status": "TRANSLATED", "locked": false}
-{"id": "100_01", "type": "REVEAL", "en": "You did not answer the phone when Busset called.", "passenger": "Lieutenant Busset", "es": "No atendiste el teléfono cuando llamó Busset.", "status": "TRANSLATED", "locked": false}
+{"id": "100_01", "type": "REVEAL", "en": "You did not answer the phone when Busset called.", "passenger": "Lieutenant Busset", "es": "No contestaste el teléfono cuando llamó Busset.", "status": "TRANSLATED", "locked": false}
 {"id": "100_02", "type": "REVEAL", "en": "The first time you met, you said nothing.", "passenger": "Lieutenant Busset", "es": "La primera vez que se encontraron, no dijiste nada.", "status": "TRANSLATED", "locked": false}
 {"id": "100_03", "type": "REVEAL", "en": "‘Fucking bitch.’", "passenger": "Lieutenant Busset", "es": "‘Maldita perra.’", "status": "TRANSLATED", "locked": false}
 {"id": "100_04", "type": "REVEAL", "en": "You informed Busset the Judge told you about her.", "passenger": "Lieutenant Busset", "es": "Le contaste a Busset que el Juez te había hablado de ella.", "status": "TRANSLATED", "locked": false}
