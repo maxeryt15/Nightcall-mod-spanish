@@ -7,7 +7,7 @@
 {"id": "asset|Given by Busset", "type": "CLUE", "en": "Given by Busset", "field": "source_name", "es": "Entregado por Busset", "status": "TRANSLATED", "locked": false}
 {"id": "asset|Autopsy Report, Victim 3", "type": "CLUE", "en": "Autopsy Report, Victim 3", "field": "title", "es": "Informe de autopsia, Víctima 3", "status": "TRANSLATED", "locked": false}
 {"id": "asset|Autopsy Report, Victim 4", "type": "CLUE", "en": "Autopsy Report, Victim 4", "field": "title", "es": "Informe de autopsia, Víctima 4", "status": "TRANSLATED", "locked": false}
-{"id": "asset|Killer Case", "type": "CLUE", "en": "Killer Case", "field": "title", "es": "Caso del asesino", "status": "TRANSLATED", "locked": false}
+{"id": "asset|Killer Case", "type": "CLUE", "en": "Killer Case", "field": "title", "es": "Caso Asesino", "status": "TRANSLATED", "locked": false}
 {"id": "asset|Picture of Crime Scene 1", "type": "CLUE", "en": "Picture of Crime Scene 1", "field": "title", "es": "Foto de la escena del crimen 1", "status": "TRANSLATED", "locked": false}
 {"id": "asset|Picture of Crime Scene 2", "type": "CLUE", "en": "Picture of Crime Scene 2", "field": "title", "es": "Foto de la escena del crimen 2", "status": "TRANSLATED", "locked": false}
 {"id": "asset|Picture of Crime Scene 3", "type": "CLUE", "en": "Picture of Crime Scene 3", "field": "title", "es": "Foto de la escena del crimen 3", "status": "TRANSLATED", "locked": false}

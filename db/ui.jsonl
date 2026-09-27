@@ -765,22 +765,22 @@
 {"id": "UI.CAR.PASSENGER.END.TIP", "type": "UI", "en": "Tip", "es": "Propina", "status": "TRANSLATED", "locked": false}
 {"id": "UI.ENDSHIFT.SUMUP.TIPS", "type": "UI", "en": "Tips", "es": "Propinas", "status": "TRANSLATED", "locked": false}
 {"id": "INVESTIGATION.RANDOM.TITLE", "type": "UI", "en": "\"Surprise\" Investigation", "es": "Investigación \"Sorpresa\"", "status": "TRANSLATED", "locked": false}
-{"id": "clue_angel_kcase_01.source", "type": "UI", "en": "Killer Case", "es": "Caso del asesino", "status": "TRANSLATED", "locked": false}
-{"id": "clue_angel_kcase_02.source", "type": "UI", "en": "Killer Case", "es": "Caso del asesino", "status": "TRANSLATED", "locked": false}
-{"id": "clue_angel_kcase_03.source", "type": "UI", "en": "Killer Case", "es": "Caso del asesino", "status": "TRANSLATED", "locked": false}
-{"id": "clue_angel_kcase_04.source", "type": "UI", "en": "Killer Case", "es": "Caso del asesino", "status": "TRANSLATED", "locked": false}
-{"id": "clue_angel_kcase_05.source", "type": "UI", "en": "Killer Case", "es": "Caso del asesino", "status": "TRANSLATED", "locked": false}
-{"id": "clue_judge_kcase_01.source", "type": "UI", "en": "Killer Case", "es": "Caso del asesino", "status": "TRANSLATED", "locked": false}
-{"id": "clue_judge_kcase_02.source", "type": "UI", "en": "Killer Case", "es": "Caso del asesino", "status": "TRANSLATED", "locked": false}
-{"id": "clue_judge_kcase_03.source", "type": "UI", "en": "Killer Case", "es": "Caso del asesino", "status": "TRANSLATED", "locked": false}
-{"id": "clue_judge_kcase_04.source", "type": "UI", "en": "Killer Case", "es": "Caso del asesino", "status": "TRANSLATED", "locked": false}
-{"id": "clue_sand_kcase_01.source", "type": "UI", "en": "Killer Case", "es": "Caso del asesino", "status": "TRANSLATED", "locked": false}
-{"id": "clue_sand_kcase_02.source", "type": "UI", "en": "Killer Case", "es": "Caso del asesino", "status": "TRANSLATED", "locked": false}
-{"id": "clue_sand_kcase_03.source", "type": "UI", "en": "Killer Case", "es": "Caso del asesino", "status": "TRANSLATED", "locked": false}
-{"id": "clue_sand_kcase_04.source", "type": "UI", "en": "Killer Case", "es": "Caso del asesino", "status": "TRANSLATED", "locked": false}
-{"id": "doc_angel_kcase.title", "type": "UI", "en": "Killer Case", "es": "Caso del asesino", "status": "TRANSLATED", "locked": false}
-{"id": "doc_judge_kcase.title", "type": "UI", "en": "Killer Case", "es": "Caso del asesino", "status": "TRANSLATED", "locked": false}
-{"id": "doc_sand_kcase.title", "type": "UI", "en": "Killer Case", "es": "Caso del asesino", "status": "TRANSLATED", "locked": false}
+{"id": "clue_angel_kcase_01.source", "type": "UI", "en": "Killer Case", "es": "Caso Asesino", "status": "TRANSLATED", "locked": false}
+{"id": "clue_angel_kcase_02.source", "type": "UI", "en": "Killer Case", "es": "Caso Asesino", "status": "TRANSLATED", "locked": false}
+{"id": "clue_angel_kcase_03.source", "type": "UI", "en": "Killer Case", "es": "Caso Asesino", "status": "TRANSLATED", "locked": false}
+{"id": "clue_angel_kcase_04.source", "type": "UI", "en": "Killer Case", "es": "Caso Asesino", "status": "TRANSLATED", "locked": false}
+{"id": "clue_angel_kcase_05.source", "type": "UI", "en": "Killer Case", "es": "Caso Asesino", "status": "TRANSLATED", "locked": false}
+{"id": "clue_judge_kcase_01.source", "type": "UI", "en": "Killer Case", "es": "Caso Asesino", "status": "TRANSLATED", "locked": false}
+{"id": "clue_judge_kcase_02.source", "type": "UI", "en": "Killer Case", "es": "Caso Asesino", "status": "TRANSLATED", "locked": false}
+{"id": "clue_judge_kcase_03.source", "type": "UI", "en": "Killer Case", "es": "Caso Asesino", "status": "TRANSLATED", "locked": false}
+{"id": "clue_judge_kcase_04.source", "type": "UI", "en": "Killer Case", "es": "Caso Asesino", "status": "TRANSLATED", "locked": false}
+{"id": "clue_sand_kcase_01.source", "type": "UI", "en": "Killer Case", "es": "Caso Asesino", "status": "TRANSLATED", "locked": false}
+{"id": "clue_sand_kcase_02.source", "type": "UI", "en": "Killer Case", "es": "Caso Asesino", "status": "TRANSLATED", "locked": false}
+{"id": "clue_sand_kcase_03.source", "type": "UI", "en": "Killer Case", "es": "Caso Asesino", "status": "TRANSLATED", "locked": false}
+{"id": "clue_sand_kcase_04.source", "type": "UI", "en": "Killer Case", "es": "Caso Asesino", "status": "TRANSLATED", "locked": false}
+{"id": "doc_angel_kcase.title", "type": "UI", "en": "Killer Case", "es": "Caso Asesino", "status": "TRANSLATED", "locked": false}
+{"id": "doc_judge_kcase.title", "type": "UI", "en": "Killer Case", "es": "Caso Asesino", "status": "TRANSLATED", "locked": false}
+{"id": "doc_sand_kcase.title", "type": "UI", "en": "Killer Case", "es": "Caso Asesino", "status": "TRANSLATED", "locked": false}
 {"id": "clue_angel_customer_rumor_07.title", "type": "UI", "en": "Vampires are real… use knife to hide bite", "es": "Vampiros reales… usa cuchillo para ocultar la mordida", "status": "TRANSLATED", "locked": false}
 {"id": "clue_angel_customer_rumor_11.title", "type": "UI", "en": "Vampires exist, is the real killer", "es": "Los vampiros existen, es el verdadero asesino", "status": "TRANSLATED", "locked": false}
 {"id": "GC.CLUE.TT.SYMBOL.CHURCH", "type": "UI", "en": "Linked to Church or religion.", "es": "Vinculado a la Iglesia o a la religión.", "status": "TRANSLATED", "locked": false}
