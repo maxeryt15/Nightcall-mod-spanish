@@ -518,7 +518,7 @@
 {"id": "clue_angel_radioshow02_02.title", "type": "UI", "en": "Victim 2 = eco-terrorist", "es": "Víctima 2 = ecoterrorista", "status": "TRANSLATED", "locked": false}
 {"id": "clue_judge_report02_01.title", "type": "UI", "en": "Victim 2 = stolen wallet", "es": "Víctima 2 = billetera robada", "status": "TRANSLATED", "locked": false}
 {"id": "clue_sand_autopsy02_01.title", "type": "UI", "en": "Victim 2 = strangled post-mortem", "es": "Víctima 2 = estrangulado post mortem", "status": "TRANSLATED", "locked": false}
-{"id": "clue_judge_radioshow04_02.title", "type": "UI", "en": "Victim 2 = racist, homophobic far-right leader", "es": "Víctima 2 = líder racista, homofóbico y de extrema derecha", "status": "TRANSLATED", "locked": false}
+{"id": "clue_judge_radioshow04_02.title", "type": "UI", "en": "Victim 2 = racist, homophobic far-right leader", "es": "Víctima 2 = líder racista, homófobo y de extrema derecha", "status": "TRANSLATED", "locked": false}
 {"id": "GC.CLUE.NAME.RICH.VIC02", "type": "UI", "en": "Victim 2 = rich", "es": "Víctima 2 = rico", "status": "TRANSLATED", "locked": false}
 {"id": "GC.CLUE.NAME.VICTIM.WEAK.VIC02", "type": "UI", "en": "Victim 2 = weak", "es": "Víctima 2 = débil", "status": "TRANSLATED", "locked": false}
 {"id": "clue_angel_radionews05_01.title", "type": "UI", "en": "Victim 2 = vegan, against animal cruelty", "es": "Víctima 2 = vegana, en contra de la crueldad animal", "status": "TRANSLATED", "locked": false}
