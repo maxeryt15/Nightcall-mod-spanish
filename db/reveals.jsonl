@@ -12,7 +12,7 @@
 {"id": "000_11", "type": "REVEAL", "en": "You have met all the passengers (base game only).", "passenger": "H.", "es": "Conociste a todos los pasajeros (solo juego base).", "status": "TRANSLATED", "locked": false}
 {"id": "000_12", "type": "REVEAL", "en": "You have arrested all the killers (base game only).", "passenger": "H.", "es": "Hiciste arrestar a todos los asesinos (solo juego base).", "status": "TRANSLATED", "locked": false}
 {"id": "000_13", "type": "REVEAL", "en": "You drove all night without picking up a single passenger.", "passenger": "H.", "es": "Manejaste toda la noche sin recoger a un solo pasajero.", "status": "TRANSLATED", "locked": false}
-{"id": "000_14", "type": "REVEAL", "en": "You haven’t read a single newspaper.", "passenger": "H.", "es": "No leíste ni un solo diario.", "status": "TRANSLATED", "locked": false}
+{"id": "000_14", "type": "REVEAL", "en": "You haven’t read a single newspaper.", "passenger": "H.", "es": "No leíste ni un solo periódico.", "status": "TRANSLATED", "locked": false}
 {"id": "000_15", "type": "REVEAL", "en": "You haven’t listened to the radio even once.", "passenger": "H.", "es": "No escuchaste la radio ni una sola vez.", "status": "TRANSLATED", "locked": false}
 {"id": "000_16", "type": "REVEAL", "en": "You had a nightmare.", "passenger": "H.", "es": "Tuviste una pesadilla.", "status": "TRANSLATED", "locked": false}
 {"id": "000_20", "type": "REVEAL", "en": "You’ve been to all the locations linked to the Judge.", "passenger": "H.", "es": "Estuviste en todos los lugares vinculados al Juez.", "status": "TRANSLATED", "locked": false}
