@@ -102,11 +102,11 @@
 {"id": "asset|Salim = defended the mafia in a trial", "type": "CLUE", "en": "Salim = defended the mafia in a trial", "field": "title", "es": "Salim = defendió a la mafia en un juicio", "status": "TRANSLATED", "locked": false}
 {"id": "asset|First three victims = suspected but never arrested", "type": "CLUE", "en": "First three victims = suspected but never arrested", "field": "title", "es": "Primeras tres víctimas = sospechosas pero nunca arrestadas", "status": "TRANSLATED", "locked": false}
 {"id": "asset|Is the Killer a religious person?", "type": "CLUE", "en": "Is the Killer a religious person?", "field": "title", "es": "¿El asesino es una persona religiosa?", "status": "TRANSLATED", "locked": false}
-{"id": "asset|Killings = failed break-ins?", "type": "CLUE", "en": "Killings = failed break-ins?", "field": "title", "es": "¿Asesinatos = allanamientos fallidos?", "status": "TRANSLATED", "locked": false}
+{"id": "asset|Killings = failed break-ins?", "type": "CLUE", "en": "Killings = failed break-ins?", "field": "title", "es": "¿Asesinatos = robos fallidos?", "status": "TRANSLATED", "locked": false}
 {"id": "asset|Killer = vampire?", "type": "CLUE", "en": "Killer = vampire?", "field": "title", "es": "¿Asesino = vampiro?", "status": "TRANSLATED", "locked": false}
 {"id": "asset|Killings = satanic rituals?", "type": "CLUE", "en": "Killings = satanic rituals?", "field": "title", "es": "¿Asesinatos = rituales satánicos?", "status": "TRANSLATED", "locked": false}
 {"id": "asset|Hervé’s police file", "type": "CLUE", "en": "Hervé’s police file", "field": "title", "es": "Ficha policial de Hervé", "status": "TRANSLATED", "locked": false}
-{"id": "asset|Hervé suspected in many break-ins.", "type": "CLUE", "en": "Hervé suspected in many break-ins.", "field": "title", "es": "Hervé, sospechoso en muchos allanamientos.", "status": "TRANSLATED", "locked": false}
+{"id": "asset|Hervé suspected in many break-ins.", "type": "CLUE", "en": "Hervé suspected in many break-ins.", "field": "title", "es": "Hervé, sospechoso de muchos robos.", "status": "TRANSLATED", "locked": false}
 {"id": "asset|Hervé allegedly robbed fishmonger.", "type": "CLUE", "en": "Hervé allegedly robbed fishmonger.", "field": "title", "es": "Hervé presuntamente robó a un pescadero.", "status": "TRANSLATED", "locked": false}
 {"id": "asset|Kitchen window left open by victim", "type": "CLUE", "en": "Kitchen window left open by victim", "field": "title", "es": "Víctima dejó ventana de cocina abierta", "status": "TRANSLATED", "locked": false}
 {"id": "asset|Victim 2 had garlic in her hand", "type": "CLUE", "en": "Victim 2 had garlic in her hand", "field": "title", "es": "La Víctima 2 tenía ajo en la mano", "status": "TRANSLATED", "locked": false}
@@ -114,7 +114,7 @@
 {"id": "asset|Left spare key under door mat.", "type": "CLUE", "en": "Left spare key under door mat.", "field": "title", "es": "Dejó llave de repuesto bajo el felpudo.", "status": "TRANSLATED", "locked": false}
 {"id": "asset|Killer < 1m80", "type": "CLUE", "en": "Killer < 1m80", "field": "title", "es": "Asesino < 1m80", "status": "TRANSLATED", "locked": false}
 {"id": "asset|Murder weapon = fillet knife", "type": "CLUE", "en": "Murder weapon = fillet knife", "field": "title", "es": "Arma homicida = cuchillo de filetear", "status": "TRANSLATED", "locked": false}
-{"id": "asset|Break-in for crime scenes 1 & 3", "type": "CLUE", "en": "Break-in for crime scenes 1 & 3", "field": "title", "es": "Allanamiento en escenas del crimen 1 y 3", "status": "TRANSLATED", "locked": false}
+{"id": "asset|Break-in for crime scenes 1 & 3", "type": "CLUE", "en": "Break-in for crime scenes 1 & 3", "field": "title", "es": "Robo en escenas del crimen 1 y 3", "status": "TRANSLATED", "locked": false}
 {"id": "asset|MO = slit throat, words written in blood, blood missing", "type": "CLUE", "en": "MO = slit throat, words written in blood, blood missing", "field": "title", "es": "MO = garganta cortada, palabras escritas con sangre, falta sangre", "status": "TRANSLATED", "locked": false}
 {"id": "asset|Murders = rituals?", "type": "CLUE", "en": "Murders = rituals?", "field": "title", "es": "¿Asesinatos = rituales?", "status": "TRANSLATED", "locked": false}
 {"id": "asset|Message on crime scene 1 = « ONLY ONE GOD »", "type": "CLUE", "en": "Message on crime scene 1 = « ONLY ONE GOD »", "field": "title", "es": "Mensaje en la escena del crimen 1 = « UN SOLO DIOS »", "status": "TRANSLATED", "locked": false}
@@ -179,7 +179,7 @@
 {"id": "asset|Victim 3 received death threats: « LUST »", "type": "CLUE", "en": "Victim 3 received death threats: « LUST »", "field": "title", "es": "Víctima 3 recibió amenazas de muerte: « LUJURIA »", "status": "TRANSLATED", "locked": false}
 {"id": "asset|Victim 3 rarely left home", "type": "CLUE", "en": "Victim 3 rarely left home", "field": "title", "es": "Víctima 3 rara vez salía de casa", "status": "TRANSLATED", "locked": false}
 {"id": "asset|Victim 3 famous for her roles in the 60s", "type": "CLUE", "en": "Victim 3 famous for her roles in the 60s", "field": "title", "es": "Víctima 3, famosa por sus papeles en los años 60", "status": "TRANSLATED", "locked": false}
-{"id": "asset|Break-ins were done by a pro", "type": "CLUE", "en": "Break-ins were done by a pro", "field": "title", "es": "Allanamientos: obra de un profesional", "status": "TRANSLATED", "locked": false}
+{"id": "asset|Break-ins were done by a pro", "type": "CLUE", "en": "Break-ins were done by a pro", "field": "title", "es": "Robos: obra de un profesional", "status": "TRANSLATED", "locked": false}
 {"id": "asset|Victims let the killer in — must look inoffensive", "type": "CLUE", "en": "Victims let the killer in — must look inoffensive", "field": "title", "es": "Víctimas dejaron entrar al asesino — debe parecer inofensivo", "status": "TRANSLATED", "locked": false}
 {"id": "asset|Victim 4 = was a Russian spy", "type": "CLUE", "en": "Victim 4 = was a Russian spy", "field": "title", "es": "Víctima 4 = fue espía rusa", "status": "TRANSLATED", "locked": false}
 {"id": "asset|Victim 2 = eco-terrorist", "type": "CLUE", "en": "Victim 2 = eco-terrorist", "field": "title", "es": "Víctima 2 = ecoterrorista", "status": "TRANSLATED", "locked": false}
@@ -187,7 +187,7 @@
 {"id": "asset|Victim 3 = attacked by far-right in the 90s", "type": "CLUE", "en": "Victim 3 = attacked by far-right in the 90s", "field": "title", "es": "Víctima 3 = atacada por la extrema derecha en los 90", "status": "TRANSLATED", "locked": false}
 {"id": "asset|Victim 2 = best friend killed by skinhead during a protest", "type": "CLUE", "en": "Victim 2 = best friend killed by skinhead during a protest", "field": "title", "es": "Víctima 2 = mejor amigo asesinado por un skinhead durante una protesta", "status": "TRANSLATED", "locked": false}
 {"id": "asset|Scientists reveal we live in a simulation", "type": "CLUE", "en": "Scientists reveal we live in a simulation", "field": "title", "es": "Científicos revelan que vivimos en una simulación", "status": "TRANSLATED", "locked": false}
-{"id": "asset|Break-ins are on the rise", "type": "CLUE", "en": "Break-ins are on the rise", "field": "title", "es": "Los allanamientos van en aumento", "status": "TRANSLATED", "locked": false}
+{"id": "asset|Break-ins are on the rise", "type": "CLUE", "en": "Break-ins are on the rise", "field": "title", "es": "Los robos van en aumento", "status": "TRANSLATED", "locked": false}
 {"id": "asset|Killing = painful for Killer?", "type": "CLUE", "en": "Killing = painful for Killer?", "field": "title", "es": "¿Matar = doloroso para el asesino?", "status": "TRANSLATED", "locked": false}
 {"id": "asset|Killings = vengeance?", "type": "CLUE", "en": "Killings = vengeance?", "field": "title", "es": "¿Asesinatos = venganza?", "status": "TRANSLATED", "locked": false}
 {"id": "asset|Killings = cover up for criminal Albatros fire?", "type": "CLUE", "en": "Killings = cover up for criminal Albatros fire?", "field": "title", "es": "¿Asesinatos = encubrimiento del incendio criminal del Albatros?", "status": "TRANSLATED", "locked": false}
