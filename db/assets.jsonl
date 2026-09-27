@@ -7,7 +7,7 @@
 {"id": "asset|Given by Busset", "type": "CLUE", "en": "Given by Busset", "field": "source_name", "es": "Entregado por Busset", "status": "TRANSLATED", "locked": false}
 {"id": "asset|Autopsy Report, Victim 3", "type": "CLUE", "en": "Autopsy Report, Victim 3", "field": "title", "es": "Informe de autopsia, Víctima 3", "status": "TRANSLATED", "locked": false}
 {"id": "asset|Autopsy Report, Victim 4", "type": "CLUE", "en": "Autopsy Report, Victim 4", "field": "title", "es": "Informe de autopsia, Víctima 4", "status": "TRANSLATED", "locked": false}
-{"id": "asset|Killer Case", "type": "CLUE", "en": "Killer Case", "field": "title", "es": "Caso Asesino", "status": "TRANSLATED", "locked": false}
+{"id": "asset|Killer Case", "type": "CLUE", "en": "Killer Case", "field": "title", "es": "Caso del asesino", "status": "TRANSLATED", "locked": false}
 {"id": "asset|Picture of Crime Scene 1", "type": "CLUE", "en": "Picture of Crime Scene 1", "field": "title", "es": "Foto de la escena del crimen 1", "status": "TRANSLATED", "locked": false}
 {"id": "asset|Picture of Crime Scene 2", "type": "CLUE", "en": "Picture of Crime Scene 2", "field": "title", "es": "Foto de la escena del crimen 2", "status": "TRANSLATED", "locked": false}
 {"id": "asset|Picture of Crime Scene 3", "type": "CLUE", "en": "Picture of Crime Scene 3", "field": "title", "es": "Foto de la escena del crimen 3", "status": "TRANSLATED", "locked": false}
@@ -66,12 +66,12 @@
 {"id": "asset|Pierrot’s dad worked on Rictodin’s scandal", "type": "CLUE", "en": "Pierrot’s dad worked on Rictodin’s scandal", "field": "title", "es": "El padre de Pierrot trabajó en el escándalo del Rictodin", "status": "TRANSLATED", "locked": false}
 {"id": "asset|Salim = investigating the first three victims", "type": "CLUE", "en": "Salim = investigating the first three victims", "field": "title", "es": "Salim = investiga a las primeras tres víctimas", "status": "TRANSLATED", "locked": false}
 {"id": "asset|Police Archives", "type": "CLUE", "en": "Police Archives", "field": "title", "es": "Archivos Policiales", "status": "TRANSLATED", "locked": false}
-{"id": "asset|Argentinian Embassy", "type": "CLUE", "en": "Argentinian Embassy", "field": "title", "es": "Embajada Argentina", "status": "TRANSLATED", "locked": false}
+{"id": "asset|Argentinian Embassy", "type": "CLUE", "en": "Argentinian Embassy", "field": "title", "es": "Embajada de Argentina", "status": "TRANSLATED", "locked": false}
 {"id": "asset|Montparnasse Gun Shop", "type": "CLUE", "en": "Montparnasse Gun Shop", "field": "title", "es": "Armería de Montparnasse", "status": "TRANSLATED", "locked": false}
 {"id": "asset|Bougrain’s Parking", "type": "CLUE", "en": "Bougrain’s Parking", "field": "title", "es": "Estacionamiento de Bougrain", "status": "TRANSLATED", "locked": false}
 {"id": "asset|Stade Charléty", "type": "CLUE", "en": "Stade Charléty", "field": "title", "es": "Stade Charléty", "status": "TRANSLATED", "locked": false}
 {"id": "asset|From source at police archives", "type": "CLUE", "en": "From source at police archives", "field": "source_name", "es": "De una fuente en los archivos policiales", "status": "TRANSLATED", "locked": false}
-{"id": "asset|From source at Argentinian Embassy", "type": "CLUE", "en": "From source at Argentinian Embassy", "field": "source_name", "es": "De una fuente en la Embajada Argentina", "status": "TRANSLATED", "locked": false}
+{"id": "asset|From source at Argentinian Embassy", "type": "CLUE", "en": "From source at Argentinian Embassy", "field": "source_name", "es": "De una fuente en la Embajada de Argentina", "status": "TRANSLATED", "locked": false}
 {"id": "asset|Message on crime scene 3 linked to the Process", "type": "CLUE", "en": "Message on crime scene 3 linked to the Process", "field": "title", "es": "Mensaje en la escena del crimen 3 vinculado al Proceso", "status": "TRANSLATED", "locked": false}
 {"id": "asset|Victim 3 = known to have tortured prisoners", "type": "CLUE", "en": "Victim 3 = known to have tortured prisoners", "field": "title", "es": "Víctima 3 = conocida por torturar prisioneros", "status": "TRANSLATED", "locked": false}
 {"id": "asset|From gun shop owner", "type": "CLUE", "en": "From gun shop owner", "field": "source_name", "es": "Del dueño de la armería", "status": "TRANSLATED", "locked": false}
@@ -150,7 +150,7 @@
 {"id": "asset|Gilda’s Church", "type": "CLUE", "en": "Gilda’s Church", "field": "title", "es": "Iglesia de Gilda", "status": "TRANSLATED", "locked": false}
 {"id": "asset|Montrouge Fire Station", "type": "CLUE", "en": "Montrouge Fire Station", "field": "title", "es": "Bomberos de Montrouge", "status": "TRANSLATED", "locked": false}
 {"id": "asset|Étienne’s Flat", "type": "CLUE", "en": "Étienne’s Flat", "field": "title", "es": "Apartamento de Étienne", "status": "TRANSLATED", "locked": false}
-{"id": "asset|From the bartender at Belvédère", "type": "CLUE", "en": "From the bartender at Belvédère", "field": "source_name", "es": "Del cantinero del Belvédère", "status": "TRANSLATED", "locked": false}
+{"id": "asset|From the bartender at Belvédère", "type": "CLUE", "en": "From the bartender at Belvédère", "field": "source_name", "es": "De la camarera del Belvédère", "status": "TRANSLATED", "locked": false}
 {"id": "asset|Victim 1 = client of Belvédère", "type": "CLUE", "en": "Victim 1 = client of Belvédère", "field": "title", "es": "Víctima 1 = cliente del Belvédère", "status": "TRANSLATED", "locked": false}
 {"id": "asset|Victim 2 = client of Belvédère", "type": "CLUE", "en": "Victim 2 = client of Belvédère", "field": "title", "es": "Víctima 2 = cliente del Belvédère", "status": "TRANSLATED", "locked": false}
 {"id": "asset|Apollonie « hunting » young people", "type": "CLUE", "en": "Apollonie « hunting » young people", "field": "title", "es": "Apollonie «cazando» gente joven", "status": "TRANSLATED", "locked": false}
@@ -158,11 +158,11 @@
 {"id": "asset|From Marco at cemetery", "type": "CLUE", "en": "From Marco at cemetery", "field": "source_name", "es": "De Marco, en el cementerio", "status": "TRANSLATED", "locked": false}
 {"id": "asset|Victim 3 part of the « Moon Flesh » cult", "type": "CLUE", "en": "Victim 3 part of the « Moon Flesh » cult", "field": "title", "es": "Víctima 3, parte del culto «Carne Lunar»", "status": "TRANSLATED", "locked": false}
 {"id": "asset|Moon Flesh cult = basically hippies", "type": "CLUE", "en": "Moon Flesh cult = basically hippies", "field": "title", "es": "Culto de la Carne Lunar = básicamente hippies", "status": "TRANSLATED", "locked": false}
-{"id": "asset|Moon Flesh cult = planted flowers & trees illegally", "type": "CLUE", "en": "Moon Flesh cult = planted flowers & trees illegally", "field": "title", "es": "Culto de la Carne Lunar = plantó flores & árboles ilegalmente", "status": "TRANSLATED", "locked": false}
+{"id": "asset|Moon Flesh cult = planted flowers & trees illegally", "type": "CLUE", "en": "Moon Flesh cult = planted flowers & trees illegally", "field": "title", "es": "Culto de la Carne Lunar = plantó flores y árboles ilegalmente", "status": "TRANSLATED", "locked": false}
 {"id": "asset|From the priest at Gilda’s church", "type": "CLUE", "en": "From the priest at Gilda’s church", "field": "source_name", "es": "Del sacerdote de la iglesia de Gilda", "status": "TRANSLATED", "locked": false}
 {"id": "asset|At Gilda’s church", "type": "CLUE", "en": "At Gilda’s church", "field": "source_name", "es": "En la iglesia de Gilda", "status": "TRANSLATED", "locked": false}
 {"id": "asset|Fish symbol seen in Gilda’s church", "type": "CLUE", "en": "Fish symbol seen in Gilda’s church", "field": "title", "es": "Símbolo del pez visto en la iglesia de Gilda", "status": "TRANSLATED", "locked": false}
-{"id": "asset|From my source at the fire station", "type": "CLUE", "en": "From my source at the fire station", "field": "source_name", "es": "De mi fuente en la estación de bomberos", "status": "TRANSLATED", "locked": false}
+{"id": "asset|From my source at the fire station", "type": "CLUE", "en": "From my source at the fire station", "field": "source_name", "es": "De mi fuente en el cuartel de bomberos", "status": "TRANSLATED", "locked": false}
 {"id": "asset|Victim 1 = hero, loved by everyone", "type": "CLUE", "en": "Victim 1 = hero, loved by everyone", "field": "title", "es": "Víctima 1 = héroe, querido por todos", "status": "TRANSLATED", "locked": false}
 {"id": "asset|Victim 1 = couldn’t save everyone in the Albatros, felt guilt", "type": "CLUE", "en": "Victim 1 = couldn’t save everyone in the Albatros, felt guilt", "field": "title", "es": "Víctima 1 = no pudo salvar a todos en el Albatros, sintió culpa", "status": "TRANSLATED", "locked": false}
 {"id": "asset|Victim 1 = strict religious family", "type": "CLUE", "en": "Victim 1 = strict religious family", "field": "title", "es": "Víctima 1 = familia estrictamente religiosa", "status": "TRANSLATED", "locked": false}
@@ -201,7 +201,7 @@
 {"id": "asset|Victim 1’s criminal records", "type": "CLUE", "en": "Victim 1’s criminal records", "field": "title", "es": "Antecedentes penales de la Víctima 1", "status": "TRANSLATED", "locked": false}
 {"id": "asset|Victim 1 = burn marks on the body, done while alive", "type": "CLUE", "en": "Victim 1 = burn marks on the body, done while alive", "field": "title", "es": "Víctima 1 = marcas de quemaduras en el cuerpo, hechas en vida", "status": "TRANSLATED", "locked": false}
 {"id": "asset|Victim 1 thought to be a suicide at first", "type": "CLUE", "en": "Victim 1 thought to be a suicide at first", "field": "title", "es": "Al principio se pensó que la Víctima 1 fue un suicidio", "status": "TRANSLATED", "locked": false}
-{"id": "asset|Victim 2 = strangled post-mortem", "type": "CLUE", "en": "Victim 2 = strangled post-mortem", "field": "title", "es": "Víctima 2 = estrangulado post mortem", "status": "TRANSLATED", "locked": false}
+{"id": "asset|Victim 2 = strangled post-mortem", "type": "CLUE", "en": "Victim 2 = strangled post-mortem", "field": "title", "es": "Víctima 2 = estrangulada post mortem", "status": "TRANSLATED", "locked": false}
 {"id": "asset|Tears found on Victim 2, maybe Killer ?", "type": "CLUE", "en": "Tears found on Victim 2, maybe Killer ?", "field": "title", "es": "Lágrimas en Víctima 2, ¿tal vez del asesino?", "status": "TRANSLATED", "locked": false}
 {"id": "asset|Victim 3 = newspaper in mouth (post-mortem)", "type": "CLUE", "en": "Victim 3 = newspaper in mouth (post-mortem)", "field": "title", "es": "Víctima 3 = periódico en la boca (post mortem)", "status": "TRANSLATED", "locked": false}
 {"id": "asset|Tears found on Victim 3, maybe Killer ?", "type": "CLUE", "en": "Tears found on Victim 3, maybe Killer ?", "field": "title", "es": "Lágrimas en Víctima 3, ¿tal vez del asesino?", "status": "TRANSLATED", "locked": false}
