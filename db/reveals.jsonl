@@ -71,7 +71,7 @@
 {"id": "013_03", "type": "REVEAL", "en": "You told Leia about Crouky.", "passenger": "Leïa", "es": "Le contaste a Leia sobre Crouky.", "status": "TRANSLATED", "locked": false}
 {"id": "013_04", "type": "REVEAL", "en": "You told Leia about Fragonard.", "passenger": "Leïa", "es": "Le contaste a Leia sobre Fragonard.", "status": "TRANSLATED", "locked": false}
 {"id": "013_05", "type": "REVEAL", "en": "Out of people!", "passenger": "Leïa", "es": "¡Se te acabó la gente!", "status": "TRANSLATED", "locked": false}
-{"id": "013_06", "type": "REVEAL", "en": "You introduced Leïa to Ethiopian jazz.", "passenger": "Leïa", "es": "Le hiciste conocer a Leïa el jazz etíope.", "status": "TRANSLATED", "locked": false}
+{"id": "013_06", "type": "REVEAL", "en": "You introduced Leïa to Ethiopian jazz.", "passenger": "Leïa", "es": "Le presentaste el jazz etíope a Leïa.", "status": "TRANSLATED", "locked": false}
 {"id": "013_07", "type": "REVEAL", "en": "You told Leïa about the Japanese movie you saw at the hospital.", "passenger": "Leïa", "es": "Le contaste a Leïa sobre la película japonesa que viste en el hospital.", "status": "TRANSLATED", "locked": false}
 {"id": "013_08", "type": "REVEAL", "en": "You shared a childhood memory with Leïa.", "passenger": "Leïa", "es": "Compartiste un recuerdo de infancia con Leïa.", "status": "TRANSLATED", "locked": false}
 {"id": "013_09", "type": "REVEAL", "en": "You thought about when you met Leïa.", "passenger": "Leia", "es": "Pensaste en cuando conociste a Leïa.", "status": "TRANSLATED", "locked": false}
@@ -223,8 +223,8 @@
 {"id": "045_01", "type": "REVEAL", "en": "You said nothing during the trip.", "passenger": "Véronique", "es": "No dijiste nada durante el viaje.", "status": "TRANSLATED", "locked": false}
 {"id": "045_02", "type": "REVEAL", "en": "Véronique faced a negative answer during your trip.", "passenger": "Véronique", "es": "Véronique recibió una respuesta negativa durante el viaje.", "status": "TRANSLATED", "locked": false}
 {"id": "046_00", "type": "REVEAL", "en": "You have met Shohreh.", "passenger": "Shohreh", "es": "Conociste a Shohreh.", "status": "TRANSLATED", "locked": false}
-{"id": "046_01", "type": "REVEAL", "en": "You heard nothing on Shohreh’s ghost station.", "passenger": "Shohreh", "es": "No escuchaste nada en la estación fantasma de Shohreh.", "status": "TRANSLATED", "locked": false}
-{"id": "046_02", "type": "REVEAL", "en": "You heard something on Shohreh’s ghost station.", "passenger": "Shohreh", "es": "Escuchaste algo en la estación fantasma de Shohreh.", "status": "TRANSLATED", "locked": false}
+{"id": "046_01", "type": "REVEAL", "en": "You heard nothing on Shohreh’s ghost station.", "passenger": "Shohreh", "es": "No escuchaste nada en la emisora fantasma de Shohreh.", "status": "TRANSLATED", "locked": false}
+{"id": "046_02", "type": "REVEAL", "en": "You heard something on Shohreh’s ghost station.", "passenger": "Shohreh", "es": "Escuchaste algo en la emisora fantasma de Shohreh.", "status": "TRANSLATED", "locked": false}
 {"id": "046_03", "type": "REVEAL", "en": "You found out Shohreh won the Fields medal.", "passenger": "Shohreh", "es": "Descubriste que Shohreh ganó la medalla Fields.", "status": "TRANSLATED", "locked": false}
 {"id": "047_00", "type": "REVEAL", "en": "You have met Amélie.", "passenger": "Amélie", "es": "Conociste a Amélie.", "status": "TRANSLATED", "locked": false}
 {"id": "047_01", "type": "REVEAL", "en": "You did not so much as glance at Amélie at the beginning of the trip.", "passenger": "Amélie", "es": "Ni siquiera miraste a Amélie al comienzo del viaje.", "status": "TRANSLATED", "locked": false}
@@ -270,7 +270,7 @@
 {"id": "057_02", "type": "REVEAL", "en": "… and let you know at the end of the ride.", "passenger": "Annabelle", "es": "… y te lo hizo saber al final del viaje.", "status": "TRANSLATED", "locked": false}
 {"id": "057_03", "type": "REVEAL", "en": "You helped Annabelle keep it together.", "passenger": "Annabelle", "es": "Ayudaste a Annabelle a mantener la compostura.", "status": "TRANSLATED", "locked": false}
 {"id": "057_04", "type": "REVEAL", "en": "Annabelle did yoga.", "passenger": "Annabelle", "es": "Annabelle hizo yoga.", "status": "TRANSLATED", "locked": false}
-{"id": "057_05", "type": "REVEAL", "en": "You played Annabelle the ghost station.", "passenger": "Annabelle", "es": "Le pusiste la estación fantasma a Annabelle.", "status": "TRANSLATED", "locked": false}
+{"id": "057_05", "type": "REVEAL", "en": "You played Annabelle the ghost station.", "passenger": "Annabelle", "es": "Le pusiste la emisora fantasma a Annabelle.", "status": "TRANSLATED", "locked": false}
 {"id": "057_06", "type": "REVEAL", "en": "Annabelle told you about the band that saved her life.", "passenger": "Annabelle", "es": "Annabelle te habló de la banda que le salvó la vida.", "status": "TRANSLATED", "locked": false}
 {"id": "058_00", "type": "REVEAL", "en": "You have met Agnès.", "passenger": "Agnès", "es": "Conociste a Agnès.", "status": "TRANSLATED", "locked": false}
 {"id": "058_01", "type": "REVEAL", "en": "You told Agnès about François de la Nérée.", "passenger": "Agnès", "es": "Le contaste a Agnès sobre François de la Nérée.", "status": "TRANSLATED", "locked": false}
@@ -310,7 +310,7 @@
 {"id": "064_05", "type": "REVEAL", "en": "Sean … the name rings a bell…", "passenger": "Janet", "es": "Sean… ese nombre te suena…", "status": "TRANSLATED", "locked": false}
 {"id": "064_06", "type": "REVEAL", "en": "Annabelle…?", "passenger": "Janet", "es": "¿Annabelle…?", "status": "TRANSLATED", "locked": false}
 {"id": "064_07", "type": "REVEAL", "en": "Pauline…?", "passenger": "Janet", "es": "¿Pauline…?", "status": "TRANSLATED", "locked": false}
-{"id": "064_08", "type": "REVEAL", "en": "You found Janet’s station.", "passenger": "Janet", "es": "Encontraste la estación de Janet.", "status": "TRANSLATED", "locked": false}
+{"id": "064_08", "type": "REVEAL", "en": "You found Janet’s station.", "passenger": "Janet", "es": "Encontraste la emisora de Janet.", "status": "TRANSLATED", "locked": false}
 {"id": "064_09", "type": "REVEAL", "en": "Janet gave you a clue.", "passenger": "Janet", "es": "Janet te dio una pista.", "status": "TRANSLATED", "locked": false}
 {"id": "065_00", "type": "REVEAL", "en": "You have met Nina.", "passenger": "Nina", "es": "Conociste a Nina.", "status": "TRANSLATED", "locked": false}
 {"id": "065_01", "type": "REVEAL", "en": "You let Nina be.", "passenger": "Nina", "es": "Dejaste tranquila a Nina.", "status": "TRANSLATED", "locked": false}
@@ -339,7 +339,7 @@
 {"id": "070_01", "type": "REVEAL", "en": "You thought about when you met Antoine.", "passenger": "Antoine", "es": "Pensaste en cuando conociste a Antoine.", "status": "TRANSLATED", "locked": false}
 {"id": "070_02", "type": "REVEAL", "en": "Antoine won the lottery.", "passenger": "Antoine", "es": "Antoine ganó la lotería.", "status": "TRANSLATED", "locked": false}
 {"id": "070_03", "type": "REVEAL", "en": "Antoine won 434 million euros playing the lottery.", "passenger": "Antoine", "es": "Antoine ganó 434 millones de euros en la lotería.", "status": "TRANSLATED", "locked": false}
-{"id": "070_04", "type": "REVEAL", "en": "Well now, is he crazy?", "passenger": "Antoine", "es": "Y bueno, ¿está loco?", "status": "TRANSLATED", "locked": false}
+{"id": "070_04", "type": "REVEAL", "en": "Well now, is he crazy?", "passenger": "Antoine", "es": "A ver, ¿está loco o qué?", "status": "TRANSLATED", "locked": false}
 {"id": "070_05", "type": "REVEAL", "en": "Holy crap … 434 million euros!", "passenger": "Antoine", "es": "Mierda… ¡434 millones de euros!", "status": "TRANSLATED", "locked": false}
 {"id": "070_06", "type": "REVEAL", "en": "Antoine helped you with your investigation.", "passenger": "Antoine", "es": "Antoine te ayudó con tu investigación.", "status": "TRANSLATED", "locked": false}
 {"id": "071_00", "type": "REVEAL", "en": "You have met Marc & Sophie.", "passenger": "Marc & Sophie", "es": "Conociste a Marc y Sophie.", "status": "TRANSLATED", "locked": false}
@@ -421,13 +421,13 @@
 {"id": "203_02", "type": "REVEAL", "en": "Milo told you about Africa.", "passenger": "Milo", "es": "Milo te habló de África.", "status": "TRANSLATED", "locked": false}
 {"id": "203_03", "type": "REVEAL", "en": "Milo told you about Poland.", "passenger": "Milo", "es": "Milo te habló de Polonia.", "status": "TRANSLATED", "locked": false}
 {"id": "205_00", "type": "REVEAL", "en": "You have met Chantal.", "passenger": "Chantal", "es": "Conociste a Chantal.", "status": "TRANSLATED", "locked": false}
-{"id": "205_01", "type": "REVEAL", "en": "You guessed Chantal's work.", "passenger": "Chantal", "es": "Adivinaste el trabajo de Chantal.", "status": "TRANSLATED", "locked": false}
+{"id": "205_01", "type": "REVEAL", "en": "You guessed Chantal's work.", "passenger": "Chantal", "es": "Adivinaste a qué se dedica Chantal.", "status": "TRANSLATED", "locked": false}
 {"id": "206_00", "type": "REVEAL", "en": "You have met Amira.", "passenger": "Amira", "es": "Conociste a Amira.", "status": "TRANSLATED", "locked": false}
 {"id": "206_01", "type": "REVEAL", "en": "Amira left the cab angry.", "passenger": "Amira", "es": "Amira se bajó del taxi enojada.", "status": "TRANSLATED", "locked": false}
 {"id": "207_00", "type": "REVEAL", "en": "You have met Lola.", "passenger": "Lola", "es": "Conociste a Lola.", "status": "TRANSLATED", "locked": false}
 {"id": "208_00", "type": "REVEAL", "en": "You have met Myrtille.", "passenger": "Myrtille", "es": "Conociste a Myrtille.", "status": "TRANSLATED", "locked": false}
 {"id": "208_01", "type": "REVEAL", "en": "A secret.", "passenger": "Myrtille", "es": "Un secreto.", "status": "TRANSLATED", "locked": false}
-{"id": "208_02", "type": "REVEAL", "en": "Emptiness.", "passenger": "Myrtille", "es": "Vacío.", "status": "TRANSLATED", "locked": false}
+{"id": "208_02", "type": "REVEAL", "en": "Emptiness.", "passenger": "Myrtille", "es": "El vacío.", "status": "TRANSLATED", "locked": false}
 {"id": "208_03", "type": "REVEAL", "en": "A hole.", "passenger": "Myrtille", "es": "Un agujero.", "status": "TRANSLATED", "locked": false}
 {"id": "208_04", "type": "REVEAL", "en": "The horizon.", "passenger": "Myrtille", "es": "El horizonte.", "status": "TRANSLATED", "locked": false}
 {"id": "210_00", "type": "REVEAL", "en": "You have met Xavier.", "passenger": "Xavier", "es": "Conociste a Xavier.", "status": "TRANSLATED", "locked": false}
