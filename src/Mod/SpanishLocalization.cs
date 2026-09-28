@@ -15,7 +15,7 @@ using UnityEngine.UI;
 
 namespace NightCallSpanish
 {
-    [BepInPlugin("com.nightcall.spanish", "Night Call Spanish", "1.0.3")]
+    [BepInPlugin("com.nightcall.spanish", "Night Call Spanish", "1.0.4")]
     public class SpanishLocalization : BaseUnityPlugin
     {
         internal static ManualLogSource Log;
@@ -61,7 +61,7 @@ namespace NightCallSpanish
         {
             Instance = this;
             Log = Logger;
-            Log.LogInfo("Night Call Spanish Localization v1.0.3 - Starting...");
+            Log.LogInfo("Night Call Spanish Localization v1.0.4 - Starting...");
 
             // Load font scale config
             FontReplacement = Config.Bind("Font", "EnableFontReplacement", false,
@@ -2079,6 +2079,9 @@ namespace NightCallSpanish
                 catch (Exception e) { Log.LogWarning(string.Format("Re-injection failed: {0}", e.Message)); }
             }
 
+            if (!ScrollingTextPatched && !object.ReferenceEquals(HarmonyInstance, null))
+                PatchScrollingText(HarmonyInstance);
+
             // Replace TextAssets in memory with Russian content
             ReplaceTextAssetsInMemory();
 
@@ -2088,6 +2091,69 @@ namespace NightCallSpanish
             processedTextKeys.Clear();
             StartCoroutine(TranslateSceneDelayed());
             if (scene.name == "splashscreen") StartCoroutine(TranslateSplash());
+        }
+
+        // Contadores que "ruedan" (surtidor: volumen y precio). El juego los dibuja con un
+        // tamaño fijo y "50.0" con el tanque lleno se sale de la caja y queda recortado.
+        // Best fit: mantiene el tamaño original y solo achica si el número no entra.
+        private static bool ScrollingTextPatched = false;
+
+        void PatchScrollingText(Harmony harmony)
+        {
+            ScrollingTextPatched = true;
+            try
+            {
+                Type scrollType = null;
+                foreach (var assembly in AppDomain.CurrentDomain.GetAssemblies())
+                {
+                    scrollType = assembly.GetType("NC.UI.UIScrollingText");
+                    if (!object.ReferenceEquals(scrollType, null)) break;
+                }
+                if (object.ReferenceEquals(scrollType, null))
+                {
+                    Log.LogWarning("UIScrollingText not found");
+                    return;
+                }
+
+                MethodInfo awake = scrollType.GetMethod("Awake", BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.Instance);
+                MethodInfo postfix = typeof(SpanishLocalization).GetMethod("UIScrollingText_Awake_Postfix", BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.Static);
+                if (!object.ReferenceEquals(awake, null) && !object.ReferenceEquals(postfix, null))
+                    harmony.Patch(awake, postfix: new HarmonyMethod(postfix));
+
+                // Instancias que ya pasaron por Awake antes del parche
+                foreach (var existing in Resources.FindObjectsOfTypeAll(scrollType))
+                    UIScrollingText_Awake_Postfix(existing);
+
+                Log.LogInfo("UIScrollingText patched (best fit)");
+            }
+            catch (Exception e)
+            {
+                Log.LogWarning(string.Format("UIScrollingText patch failed: {0}", e.Message));
+            }
+        }
+
+        static void UIScrollingText_Awake_Postfix(object __instance)
+        {
+            try
+            {
+                Type t = __instance.GetType();
+                foreach (string name in new string[] { "text", "text_up" })
+                {
+                    FieldInfo f = t.GetField(name, BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.Instance);
+                    if (object.ReferenceEquals(f, null)) continue;
+                    Text text = f.GetValue(__instance) as Text;
+                    if (text == null || text.resizeTextForBestFit) continue;
+                    int size = text.fontSize;
+                    text.resizeTextMaxSize = size;
+                    text.resizeTextMinSize = Math.Max(1, size / 2);
+                    text.horizontalOverflow = HorizontalWrapMode.Wrap;
+                    text.resizeTextForBestFit = true;
+                }
+            }
+            catch (Exception e)
+            {
+                if (Log != null) Log.LogWarning(string.Format("[ScrollingText] {0}", e.Message));
+            }
         }
 
         IEnumerator TranslateSceneDelayed()

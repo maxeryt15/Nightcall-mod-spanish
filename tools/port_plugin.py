@@ -28,9 +28,9 @@ def port_cs(s):
     s = sub(s, "NightCallRussian", "NightCallSpanish")
     s = sub(s, "RussianLocalization", "SpanishLocalization", count=10)
     s = sub(s, '"com.nightcall.russian", "Night Call Russian", "8.1.0"',
-            '"com.nightcall.spanish", "Night Call Spanish", "1.0.3"')
+            '"com.nightcall.spanish", "Night Call Spanish", "1.0.4"')
     s = sub(s, 'new Harmony("com.nightcall.russian")', 'new Harmony("com.nightcall.spanish")')
-    s = sub(s, "Night Call Russian Localization v8.1.0", "Night Call Spanish Localization v1.0.3")
+    s = sub(s, "Night Call Russian Localization v8.1.0", "Night Call Spanish Localization v1.0.4")
     s = sub(s, '"Russian_UI"', '"Spanish_UI"', count=2)
     s = sub(s, '"Russian_Texts"', '"Spanish_Texts"', count=2)
     s = sub(s, '"Russian_Texts_backup"', '"Spanish_Texts_backup"')
@@ -190,7 +190,80 @@ def port_cs(s):
     s = sub(s, "            string text;\n            if (DialogueTexts.TryGetValue(assetName, out text))",
             "            string text;\n            if (LayerTextAssets && DialogueTexts.TryGetValue(assetName, out text))")
     s = sub(s, "            EnumerateAndPatchAllFonts();", "            if (FontReplacement) EnumerateAndPatchAllFonts();")
+
+    # --- surtidor: "50.0" con el tanque lleno no entra en su caja y se recorta ---
+    s = sub(s, "            // Replace TextAssets in memory with Russian content\n            ReplaceTextAssetsInMemory();",
+            "            if (!ScrollingTextPatched && !object.ReferenceEquals(HarmonyInstance, null))\n"
+            "                PatchScrollingText(HarmonyInstance);\n\n"
+            "            // Replace TextAssets in memory with Russian content\n            ReplaceTextAssetsInMemory();")
+    s = sub(s, "        IEnumerator TranslateSceneDelayed()\n        {", SCROLLING_TEXT_FIT + "        IEnumerator TranslateSceneDelayed()\n        {")
     return s
+
+
+SCROLLING_TEXT_FIT = r'''        // Contadores que "ruedan" (surtidor: volumen y precio). El juego los dibuja con un
+        // tamaño fijo y "50.0" con el tanque lleno se sale de la caja y queda recortado.
+        // Best fit: mantiene el tamaño original y solo achica si el número no entra.
+        private static bool ScrollingTextPatched = false;
+
+        void PatchScrollingText(Harmony harmony)
+        {
+            ScrollingTextPatched = true;
+            try
+            {
+                Type scrollType = null;
+                foreach (var assembly in AppDomain.CurrentDomain.GetAssemblies())
+                {
+                    scrollType = assembly.GetType("NC.UI.UIScrollingText");
+                    if (!object.ReferenceEquals(scrollType, null)) break;
+                }
+                if (object.ReferenceEquals(scrollType, null))
+                {
+                    Log.LogWarning("UIScrollingText not found");
+                    return;
+                }
+
+                MethodInfo awake = scrollType.GetMethod("Awake", BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.Instance);
+                MethodInfo postfix = typeof(SpanishLocalization).GetMethod("UIScrollingText_Awake_Postfix", BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.Static);
+                if (!object.ReferenceEquals(awake, null) && !object.ReferenceEquals(postfix, null))
+                    harmony.Patch(awake, postfix: new HarmonyMethod(postfix));
+
+                // Instancias que ya pasaron por Awake antes del parche
+                foreach (var existing in Resources.FindObjectsOfTypeAll(scrollType))
+                    UIScrollingText_Awake_Postfix(existing);
+
+                Log.LogInfo("UIScrollingText patched (best fit)");
+            }
+            catch (Exception e)
+            {
+                Log.LogWarning(string.Format("UIScrollingText patch failed: {0}", e.Message));
+            }
+        }
+
+        static void UIScrollingText_Awake_Postfix(object __instance)
+        {
+            try
+            {
+                Type t = __instance.GetType();
+                foreach (string name in new string[] { "text", "text_up" })
+                {
+                    FieldInfo f = t.GetField(name, BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.Instance);
+                    if (object.ReferenceEquals(f, null)) continue;
+                    Text text = f.GetValue(__instance) as Text;
+                    if (text == null || text.resizeTextForBestFit) continue;
+                    int size = text.fontSize;
+                    text.resizeTextMaxSize = size;
+                    text.resizeTextMinSize = Math.Max(1, size / 2);
+                    text.horizontalOverflow = HorizontalWrapMode.Wrap;
+                    text.resizeTextForBestFit = true;
+                }
+            }
+            catch (Exception e)
+            {
+                if (Log != null) Log.LogWarning(string.Format("[ScrollingText] {0}", e.Message));
+            }
+        }
+
+'''
 
 
 if __name__ == "__main__":
@@ -212,7 +285,7 @@ if __name__ == "__main__":
     # en Propiedades de la DLL). Mantener igual a la versión del BepInPlugin y del instalador.
     with open(os.path.join(SRC, "Properties", "AssemblyInfo.cs"), encoding="utf-8-sig") as f:
         info = f.read().replace("Russian", "Spanish")
-    info = re.sub(r'(Assembly(?:File)?Version\(")[\d.]+("\))', r"\g<1>1.0.3.0\g<2>", info)
+    info = re.sub(r'(Assembly(?:File)?Version\(")[\d.]+("\))', r"\g<1>1.0.4.0\g<2>", info)
     with open(os.path.join(DST, "Properties", "AssemblyInfo.cs"), "w", encoding="utf-8", newline="\n") as f:
         f.write(info)
     print("port listo: src/Mod/SpanishLocalization.cs")

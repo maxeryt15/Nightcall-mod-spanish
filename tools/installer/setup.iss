@@ -5,7 +5,7 @@
 ; No se versiona el .exe resultante: se genera en dist/.
 
 #define MyAppName "Night Call - Traducción al español"
-#define MyAppVersion "1.0.3"
+#define MyAppVersion "1.0.4"
 #define MyAppPublisher "Traducción fan (no oficial)"
 #define Payload "payload"
 
