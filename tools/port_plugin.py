@@ -28,9 +28,9 @@ def port_cs(s):
     s = sub(s, "NightCallRussian", "NightCallSpanish")
     s = sub(s, "RussianLocalization", "SpanishLocalization", count=10)
     s = sub(s, '"com.nightcall.russian", "Night Call Russian", "8.1.0"',
-            '"com.nightcall.spanish", "Night Call Spanish", "1.0.2"')
+            '"com.nightcall.spanish", "Night Call Spanish", "1.0.3"')
     s = sub(s, 'new Harmony("com.nightcall.russian")', 'new Harmony("com.nightcall.spanish")')
-    s = sub(s, "Night Call Russian Localization v8.1.0", "Night Call Spanish Localization v1.0.2")
+    s = sub(s, "Night Call Russian Localization v8.1.0", "Night Call Spanish Localization v1.0.3")
     s = sub(s, '"Russian_UI"', '"Spanish_UI"', count=2)
     s = sub(s, '"Russian_Texts"', '"Spanish_Texts"', count=2)
     s = sub(s, '"Russian_Texts_backup"', '"Spanish_Texts_backup"')
@@ -212,7 +212,7 @@ if __name__ == "__main__":
     # en Propiedades de la DLL). Mantener igual a la versión del BepInPlugin y del instalador.
     with open(os.path.join(SRC, "Properties", "AssemblyInfo.cs"), encoding="utf-8-sig") as f:
         info = f.read().replace("Russian", "Spanish")
-    info = re.sub(r'(Assembly(?:File)?Version\(")[\d.]+("\))', r"\g<1>1.0.2.0\g<2>", info)
+    info = re.sub(r'(Assembly(?:File)?Version\(")[\d.]+("\))', r"\g<1>1.0.3.0\g<2>", info)
     with open(os.path.join(DST, "Properties", "AssemblyInfo.cs"), "w", encoding="utf-8", newline="\n") as f:
         f.write(info)
     print("port listo: src/Mod/SpanishLocalization.cs")
