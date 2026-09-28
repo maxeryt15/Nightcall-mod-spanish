@@ -16,7 +16,7 @@ using UnityEngine.UI;
 
 namespace NightCallSpanish
 {
-    [BepInPlugin("com.nightcall.spanish", "Night Call Spanish", "1.0.5")]
+    [BepInPlugin("com.nightcall.spanish", "Night Call Spanish", "1.0.6")]
     public class SpanishLocalization : BaseUnityPlugin
     {
         internal static ManualLogSource Log;
@@ -62,7 +62,7 @@ namespace NightCallSpanish
         {
             Instance = this;
             Log = Logger;
-            Log.LogInfo("Night Call Spanish Localization v1.0.5 - Starting...");
+            Log.LogInfo("Night Call Spanish Localization v1.0.6 - Starting...");
 
             // Load font scale config
             FontReplacement = Config.Bind("Font", "EnableFontReplacement", false,
@@ -185,7 +185,8 @@ namespace NightCallSpanish
         private string updateVersion = "", updateNotes = "", updateUrl = "", updateDigest = "", updateError = "";
         private bool updateUrlIsZip = false;
         private float updateProgress = 0f;
-        private GUIStyle updTitle, updText, updButton;
+        private GUIStyle updTitle, updText, updButton, updGreen, updOrange, updRed;
+        private GUILayoutOption[] updBigOpt, updSmallOpt;
         // Pasar siempre las opciones: sin ellas el compilador usa Array.Empty (no existe en el Mono del juego)
         static readonly GUILayoutOption[] NoOpt = new GUILayoutOption[0];
         private Texture2D updPanel, updShade;
@@ -507,6 +508,28 @@ $form.Close()
             return null;
         }
 
+        static GUIStyle MakeButtonStyle(Color bg, Color text, int fontSize)
+        {
+            GUIStyle s = new GUIStyle(GUI.skin.button);
+            s.fontSize = fontSize;
+            s.padding = new RectOffset(16, 16, 8, 8);
+            s.border = new RectOffset(0, 0, 0, 0);
+            s.normal.background = SolidTexture(bg);
+            s.hover.background = SolidTexture(Color.Lerp(bg, Color.white, 0.12f));
+            s.active.background = SolidTexture(Color.Lerp(bg, Color.black, 0.25f));
+            s.focused.background = s.normal.background;
+            s.normal.textColor = text; s.hover.textColor = Color.white; s.active.textColor = text; s.focused.textColor = text;
+            return s;
+        }
+
+        static Texture2D SolidTexture(Color c)
+        {
+            Texture2D t = new Texture2D(1, 1);
+            t.SetPixel(0, 0, c);
+            t.Apply();
+            return t;
+        }
+
         void CloseUpdateWindow()
         {
             updateState = 0;
@@ -561,8 +584,14 @@ $form.Close()
                 updTitle.normal.textColor = new Color(0.86f, 0.73f, 0.39f);
                 updText = new GUIStyle(GUI.skin.label);
                 updText.fontSize = 16; updText.wordWrap = true; updText.normal.textColor = Color.white;
-                updButton = new GUIStyle(GUI.skin.button);
-                updButton.fontSize = 16; updButton.padding = new RectOffset(12, 12, 8, 8);
+                // Botones planos con un tinte sutil sobre el panel oscuro
+                updButton = MakeButtonStyle(new Color(0.22f, 0.22f, 0.25f), new Color(0.92f, 0.92f, 0.92f), 15);
+                updGreen = MakeButtonStyle(new Color(0.13f, 0.34f, 0.19f), new Color(0.80f, 1f, 0.84f), 19);
+                updGreen.fontStyle = FontStyle.Bold;
+                updOrange = MakeButtonStyle(new Color(0.40f, 0.25f, 0.09f), new Color(1f, 0.84f, 0.62f), 15);
+                updRed = MakeButtonStyle(new Color(0.38f, 0.13f, 0.13f), new Color(1f, 0.78f, 0.78f), 15);
+                updBigOpt = new GUILayoutOption[] { GUILayout.Height(52), GUILayout.MinWidth(230) };
+                updSmallOpt = new GUILayoutOption[] { GUILayout.Height(40) };
                 updPanel = new Texture2D(1, 1); updPanel.SetPixel(0, 0, new Color(0.06f, 0.06f, 0.07f, 0.97f)); updPanel.Apply();
                 updShade = new Texture2D(1, 1); updShade.SetPixel(0, 0, new Color(0f, 0f, 0f, 0.6f)); updShade.Apply();
             }
@@ -575,7 +604,7 @@ $form.Close()
             GUI.matrix = Matrix4x4.TRS(Vector3.zero, Quaternion.identity, new Vector3(scale, scale, 1f));
             float vw = Screen.width / scale;
             GUI.DrawTexture(new Rect(0, 0, vw, 720), updShade);
-            float w = 620, h = updateState == 1 ? 400 : 220;
+            float w = updateState == 1 ? 720 : 620, h = updateState == 1 ? 410 : 220;
             Rect box = new Rect((vw - w) / 2f, (720 - h) / 2f, w, h);
             GUI.DrawTexture(box, updPanel);
 
@@ -590,13 +619,22 @@ $form.Close()
                 GUILayout.Label("Si aceptas, el juego se cerrará, se instalará la actualización y se volverá a abrir solo. Tus partidas guardadas no se tocan.", updText, NoOpt);
                 GUILayout.Space(12);
                 GUILayout.BeginHorizontal(NoOpt);
-                if (GUILayout.Button("Sí, actualizar ahora", updButton, NoOpt)) StartCoroutine(DownloadAndInstall());
-                if (GUILayout.Button("Ahora no", updButton, NoOpt)) CloseUpdateWindow();
-                if (GUILayout.Button("No avisar de esta versión", updButton, NoOpt))
+                if (GUILayout.Button("Sí, actualizar ahora", updGreen, updBigOpt)) StartCoroutine(DownloadAndInstall());
+                GUILayout.Space(12);
+                // los secundarios, más bajos y centrados respecto del principal
+                GUILayout.BeginVertical(NoOpt);
+                GUILayout.Space(6);
+                if (GUILayout.Button("Recordarme luego", updOrange, updSmallOpt)) CloseUpdateWindow();
+                GUILayout.EndVertical();
+                GUILayout.Space(8);
+                GUILayout.BeginVertical(NoOpt);
+                GUILayout.Space(6);
+                if (GUILayout.Button("No avisar de esta versión", updRed, updSmallOpt))
                 {
                     SkipVersionConfig.Value = updateVersion;
                     CloseUpdateWindow();
                 }
+                GUILayout.EndVertical();
                 GUILayout.EndHorizontal();
             }
             else if (updateState == 2)
@@ -605,7 +643,10 @@ $form.Close()
                 GUILayout.Space(12);
                 GUILayout.Label(string.Format("v{0}: {1}%", updateVersion, Mathf.RoundToInt(updateProgress * 100f)), updText, NoOpt);
                 GUILayout.FlexibleSpace();
-                if (GUILayout.Button("Cancelar", updButton, NoOpt)) CloseUpdateWindow();
+                GUILayout.BeginHorizontal(NoOpt);
+                GUILayout.FlexibleSpace();
+                if (GUILayout.Button("Cancelar", updRed, new GUILayoutOption[] { GUILayout.Height(40), GUILayout.Width(160) })) CloseUpdateWindow();
+                GUILayout.EndHorizontal();
             }
             else if (updateState == 3)
             {
