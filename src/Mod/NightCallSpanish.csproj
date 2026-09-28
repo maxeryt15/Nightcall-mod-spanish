@@ -7,6 +7,7 @@
     <NoWarn>CS0162</NoWarn>
     <LibsDir>$(MSBuildThisFileDirectory)..\..\ref-russian\libs</LibsDir>
     <BepInExDir>$(MSBuildThisFileDirectory)..\..\ref-russian\data\BepInEx\core</BepInExDir>
+    <GameManagedDir Condition="'$(GameManagedDir)' == ''">D:\SteamLibrary\steamapps\common\Night Call\Night Call_Data\Managed</GameManagedDir>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="BepInEx">
@@ -55,6 +56,10 @@
     </Reference>
     <Reference Include="Assembly-CSharp">
       <HintPath>$(LibsDir)\Assembly-CSharp.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestModule">
+      <HintPath>$(GameManagedDir)\UnityEngine.UnityWebRequestModule.dll</HintPath>
       <Private>false</Private>
     </Reference>
   </ItemGroup>

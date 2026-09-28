@@ -5,7 +5,7 @@
 ; No se versiona el .exe resultante: se genera en dist/.
 
 #define MyAppName "Night Call - Traducción al español"
-#define MyAppVersion "1.0.4"
+#define MyAppVersion "1.0.5"
 #define MyAppPublisher "Traducción fan (no oficial)"
 #define Payload "payload"
 
@@ -203,6 +203,9 @@ end;
 function NextButtonClick(CurPageID: Integer): Boolean;
 begin
   Result := True;
+  // En silencio (actualización desde el juego) la carpeta la da el mod: no preguntar
+  if WizardSilent then
+    exit;
   if CurPageID = wpSelectDir then
   begin
     if not IsValidGameDir(WizardDirValue()) then
