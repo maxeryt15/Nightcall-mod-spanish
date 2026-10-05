@@ -80,6 +80,32 @@ Reglas: nunca editar `db/` a mano ni reescribir filas `locked` o `TESTED`; los I
 Para armar el instalador distribuible: `tools/build_release.py` (requiere `pip install pyinstaller`
 e Inno Setup, más una instalación local con BepInEx + el plugin compilado en Release).
 
+## Términos de uso y protección de la traducción
+
+© 2026 maxeryt15. Todos los derechos reservados sobre la **traducción al español** (los textos de `db/`, `translation/` y los archivos generados a partir de ellos), el instalador y las herramientas propias de este repositorio. Que el código esté visible en GitHub **no** significa que sea de uso libre. Texto completo en [LICENSE](LICENSE).
+
+**Uso permitido sin pedir permiso:**
+- Instalar y usar la traducción, para uso personal y no comercial, desde la [página oficial de Releases](../../releases/latest) de este repositorio.
+
+**Requiere mi permiso previo y por escrito:**
+- Redistribuir, resubir o alojar en otro sitio el instalador, el plugin compilado o los textos traducidos (incluidos foros, Nexus Mods, Steam Workshop, Drive, Telegram, etc.).
+- Incluir la traducción, total o parcialmente, en otro mod, pack, instalador o repack del juego.
+- Modificarla, adaptarla o crear obras derivadas a partir de los textos traducidos, y publicarlas.
+- Copiar o reutilizar los textos traducidos (`db/`, `Spanish_Texts/`, `Spanish_UI/`) en otros proyectos, o usarlos para entrenar modelos de IA.
+- Cualquier uso comercial: venderla, cobrar por ella, monetizarla con anuncios, acortadores de enlaces, muros de pago o donaciones condicionadas a la descarga.
+- Hacerla pasar por obra propia o quitar los créditos y esta nota.
+
+**Condiciones generales:**
+- La traducción se ofrece "tal cual", sin garantía de ningún tipo. No me hago responsable de daños o pérdidas de partidas derivados de su uso.
+- Es una obra fan no oficial. No está afiliada ni respaldada por Monkey Moon, BlackMuffin ni Raw Fury. El juego, su texto original y sus marcas pertenecen a sus titulares; necesitas una copia legítima del juego.
+- Si usas capturas o videos mostrando la traducción (reseñas, streams, guías), está permitido siempre que menciones su autoría y enlaces a este repositorio.
+- Usar la traducción implica aceptar estos términos. Si no estás de acuerdo, no la instales.
+- Si encuentro una redistribución no autorizada, puedo pedir su retirada (por ejemplo mediante un aviso DMCA a la plataforma que la aloje).
+
+Para pedir permiso, abre un *issue* en este repositorio o escríbeme por GitHub (@maxeryt15).
+
+**Alcance:** estos términos aplican solo a lo que es mío. Los componentes de terceros (BepInEx, HarmonyX, MonoMod y el código base del plugin derivado del proyecto ruso) conservan sus propias licencias, indicadas abajo y en [NOTICE.md](NOTICE.md), y nada de lo anterior las modifica.
+
 ## Licencias
 
 - [BepInEx](https://github.com/BepInEx/BepInEx) (LGPL-2.1), [HarmonyX](https://github.com/BepInEx/HarmonyX) (MIT) y [MonoMod](https://github.com/MonoMod/MonoMod) (MIT), incluidos en el instalador.

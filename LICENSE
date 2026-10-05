@@ -1,0 +1,51 @@
+Night Call: Traducción al español (no oficial)
+Copyright (c) 2026 maxeryt15. Todos los derechos reservados.
+
+Esta licencia aplica a la traducción al español (los textos de db/, translation/ y
+los archivos generados a partir de ellos), al instalador y a las herramientas propias
+de este repositorio. No aplica a componentes de terceros (ver "Alcance").
+
+1. USO PERMITIDO
+   Se te permite instalar y usar la traducción para uso personal y no comercial,
+   descargándola desde la página oficial de Releases de este repositorio.
+
+2. USOS QUE REQUIEREN PERMISO PREVIO Y POR ESCRITO DEL AUTOR
+   a) Redistribuir, resubir o alojar el instalador, el plugin compilado o los textos
+      traducidos en cualquier otro sitio o medio.
+   b) Incluir la traducción, total o parcialmente, en otro mod, pack, instalador o
+      repack del juego.
+   c) Modificarla, adaptarla o crear y publicar obras derivadas de los textos
+      traducidos.
+   d) Copiar o reutilizar los textos traducidos en otros proyectos, o usarlos para
+      entrenar modelos de inteligencia artificial.
+   e) Cualquier uso comercial, incluida la monetización directa o indirecta.
+   f) Hacerla pasar por obra propia o quitar los créditos y avisos de este repositorio.
+
+3. EXCEPCIÓN: CAPTURAS Y VIDEOS
+   Se permiten capturas, videos, streams y reseñas que muestren la traducción,
+   siempre que se mencione la autoría y se enlace a este repositorio.
+
+4. SIN GARANTÍA
+   LA TRADUCCIÓN SE OFRECE "TAL CUAL", SIN GARANTÍA DE NINGÚN TIPO. EL AUTOR NO SE
+   HACE RESPONSABLE DE DAÑOS O PÉRDIDAS (INCLUIDAS PARTIDAS GUARDADAS) DERIVADOS DE
+   SU USO.
+
+5. OBRA NO OFICIAL
+   Esta es una obra fan no oficial. No está afiliada ni respaldada por Monkey Moon,
+   BlackMuffin ni Raw Fury. Night Call, su texto original y sus marcas pertenecen a
+   sus titulares. Se requiere una copia legítima del juego.
+
+6. ACEPTACIÓN Y CUMPLIMIENTO
+   Usar la traducción implica aceptar estos términos. El incumplimiento extingue
+   automáticamente los permisos otorgados aquí, y el autor puede solicitar el retiro
+   del material infractor a la plataforma que lo aloje (por ejemplo, mediante un
+   aviso DMCA).
+
+7. ALCANCE
+   Estos términos aplican solo a la obra del autor. Los componentes de terceros
+   (BepInEx, HarmonyX, MonoMod y el código base del plugin derivado de
+   russian-localisation-night-call, bajo CC BY 4.0) conservan sus propias licencias,
+   indicadas en el README y en NOTICE.md, y nada de lo anterior las modifica.
+
+Para solicitar permiso, abre un issue en este repositorio o contacta al autor por
+GitHub (@maxeryt15).
